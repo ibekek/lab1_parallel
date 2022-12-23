@@ -1,3 +1,10 @@
+/*
+To run on replit.com (in Shell):
+1. mpicc + mpi.out
+2. mpicc main.c
+3. mpirun -mca plm_rsh_agent sh -n 4 a.out
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,12 +23,6 @@ int main(int argc, char **argv) {
 
   // define number of processes and ranks of processes
   int procNum, procRank;
-
-  // filling array with random values [0;100]
-  // for (i = 0; i < n; i++) {
-  //   mas[i] = rand() % 100;
-  //   //printf("%d ", mas[i]);
-  // }
 
   // initialization MPI
   MPI_Init(&argc, &argv);
