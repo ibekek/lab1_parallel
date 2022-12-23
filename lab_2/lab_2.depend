@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1669120053 source:c:\users\aleks\documents\codeblocks\lab_2\main.c
-	<stdio.h>
-	<stdlib.h>
-	<omp.h>
-
